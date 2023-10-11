@@ -1,0 +1,35 @@
+html {
+  width: 100dvw;
+  background-color: black;
+  color: white;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  padding: 10%;
+}
+
+#homepage {
+  display: grid;
+  width: max-content;
+  height: max-content;
+}
+
+#homepage__greeting {
+  font-size: 3rem;
+}
+
+#menu__portfolio {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu__contact {
+  display: flex;
+  padding: 10% 0;
+  justify-content: space-between;
+}

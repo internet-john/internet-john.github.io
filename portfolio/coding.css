@@ -1,0 +1,10 @@
+html {
+  width: 100dvw;
+  background-color: black;
+  color: white;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+}
