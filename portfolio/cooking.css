@@ -21,13 +21,6 @@ body {
   margin-top: 2%;
 }
 
-@media screen and (max-width: 480px) {
-  #cooking__collage {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
 img {
   height: auto;
   width: 100%;
@@ -38,8 +31,7 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  #cooking__collage img {
-    height: auto;
-    width: 100%;
+  #cooking__collage {
+    display: block;
   }
 }
