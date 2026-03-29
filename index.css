@@ -1,5 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
-  width: 100dvw;
   background-color: black;
   color: white;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -10,17 +15,17 @@ a {
 }
 
 body {
-  padding: 10%;
+  margin: 0;
+  padding: 8vw;
 }
 
 #homepage {
   display: grid;
-  width: max-content;
-  height: max-content;
 }
 
 #homepage__greeting {
-  font-size: 3rem;
+  font-size: clamp(2rem, 8vw, 3rem);
+  margin: 0 0 1.5rem;
 }
 
 #menu__portfolio {
@@ -30,6 +35,17 @@ body {
 
 #menu__contact {
   display: flex;
-  padding: 10% 0;
+  padding: 2rem 0;
+  gap: 1rem;
   justify-content: space-between;
+}
+
+@media (min-width: 640px) {
+  body {
+    padding: 10%;
+  }
+
+  #menu__contact {
+    padding: 10% 0;
+  }
 }
